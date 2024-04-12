@@ -1,0 +1,352 @@
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap');
+body{
+    background-image: url(assets/background2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+#headerContainer{
+    padding: 10px;
+    background-color: #22577E;
+    height: 75px;
+    display: flex; 
+    align-items: center;
+
+}
+header{
+    font-size: 24px; 
+    margin: 0; 
+    color: #B8FFF9;
+    
+}
+#imgContainer {
+    margin-right: 20px;
+    padding-left: 5px;
+}
+#imgContainer img {
+    width: 35px;
+    height: 35px;
+}
+
+#navbarContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 250px;
+}
+#navbarContainer ul{
+    list-style-type: none;
+    margin: 0; 
+    padding: 0; 
+}
+
+#navbarContainer ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+#navbarContainer ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #B8FFF9;
+}
+#navbarContainer ul li a:hover{
+    color: #56BBF1;
+}
+#searchBar {
+    display: inline;
+    margin-left: 90px; 
+}
+
+#searchInput {
+    width: 300px;
+    padding: 5px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+}
+
+#searchButton {
+    padding: 5px 10px; 
+    border: none; 
+    background-color: #0AA1DD; 
+    color: white; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+#searchButton:hover {
+    background-color: #56BBF1; 
+}
+
+.hamburger {
+    display: none; 
+    width: 65px;
+    height: 55px;
+    color: #B8FFF9;
+    border-radius: 10px;
+    background-color: #56BBF1;
+    font-size: 35px;
+    
+}
+
+
+#greetingsContainer {
+    position: relative;
+    background-color: #56BBF1;
+    padding: 20px;
+    margin-top: 55px;
+    border-radius: 100px;
+    
+    
+}
+
+
+#greetingsContainer::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #56BBF1;
+    border-bottom: 0;
+    margin-left: -10px;
+}
+.greetings{
+    font-family: 'M PLUS 1 Code';
+}
+
+#weatherContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #22577E;
+    width: 80%; 
+    max-width: 350px; 
+    height: auto;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto; 
+    color: #B8FFF9;
+    border-radius: 10px;
+}
+
+
+
+#dailyForecastContainer {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+
+.col {
+    display: inline-block; 
+    width: 150px;
+    height: 150px;
+    border: 1px solid #B8FFF9;
+    margin: 10px; 
+    padding: 10px;
+    background-color: #22577E;
+    text-align: center; 
+    color: #B8FFF9;
+    border-radius: 10px;
+   
+}
+/*
+
+#dailyForecastContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.col {
+    display: inline-block; 
+    width: 150px;
+    height: 150px;
+    border: 1px solid #B8FFF9;
+    margin: 10px;
+    padding: 10px;
+    background-color: #22577E;
+    text-align: center;
+    color: #B8FFF9;
+    border-radius: 10px;
+}*/
+#openweathermap-widget-21{
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ #heading1{
+    margin-top: 35px;
+    color: #B8FFF9;
+    text-align: center;
+   
+}
+
+#loginContainer {
+    width: 400px;
+    margin: 130px auto;
+    padding: 20px;
+    background-color: #B8FFF9;
+    border: 2px solid #22577E;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#heading2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #56BBF1;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: calc(100% - 38px); /* Adjusted width to accommodate for padding */
+}
+
+.form-label {
+    margin-bottom: 5px;
+}
+
+#passwordHelpBlock {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+#inputPassword5 {
+    margin-top: 10px;
+}
+#loginBtn{
+    margin-top: 10px;
+    margin-left: 150px;
+}
+#cityInput {
+    display: block;
+    margin: 50px auto; /* Center the input field horizontally and provide vertical margin */
+    width: 300px; /* Adjust width as needed */
+    height: 40px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+#airqualityBtn {
+    display: block;
+    margin: 20px auto; /* Center the button horizontally and provide vertical margin */
+    width: 120px; /* Adjust width as needed */
+    height: 40px;
+    padding: 8px 16px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#airqualityBtn:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+#airQualityChart {
+    width: 300px;
+    height: 200px;
+    color: aliceblue;
+}
+#greetingsHeading{
+    display: none;
+}
+
+
+@media (max-width: 500px) {
+    #loginContainer {
+        width: 90%;
+    }
+   
+}
+
+
+@media screen and (max-width: 1382px) {
+    .hamburger {
+        display: block; 
+        position: absolute; 
+        top: 10px; 
+        right: 10px; 
+        z-index: 999; 
+        border: none;
+    }
+
+    #navMenu {
+        display: none; 
+        flex-direction: column;
+        position: absolute; 
+        top: 75px;
+        right: 10px; 
+        width: 200px; 
+        background-color: #22577E; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    }
+
+    #navMenu.active {
+        display: flex; 
+    }
+
+    #navMenu ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #navMenu ul li {
+        display: block; 
+        text-align: center; 
+        margin-bottom: 20px; 
+       
+    }
+
+    #navMenu ul li a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #B8FFF9;
+    }
+
+    #searchBar {
+        display: none;
+        margin-top: 10px; 
+    }
+    #greetingsHeading{
+     /*   margin-left: 550px;
+        margin-top: 100px;
+        color: #B8FFF9;
+        font-size: 50px;
+       */
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: #B8FFF9;
+        font-size: 40px; /* Adjust the font size as needed */
+        margin-top: 50px; /* Adjust the margin-top as needed */
+        width: 100%; 
+    }
+    #greetingsContainer {
+        margin-top: 100px;
+    }
+   
+}
