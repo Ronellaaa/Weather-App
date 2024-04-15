@@ -19,7 +19,7 @@ function toggleHome() {
     var greetingsContainer = document.getElementById('greetingsContainer');
     var weatherContainer = document.getElementById('weatherContainer');
     var dailyForecastContainer = document.getElementById('dailyForecastContainer');
-    var weatherWidget = document.getElementById('openweathermap-widget-21');
+   // var weatherWidget = document.getElementById('openweathermap-widget-22');
     var heading1 = document.getElementById('heading1');
     var heading2 = document.getElementById('heading2');
     var loginContainer = document.getElementById('loginContainer');
@@ -38,7 +38,7 @@ function toggleHome() {
     heading1.style.display = 'none';
     heading2.style.display = 'none';
     dailyForecastContainer.style.display = 'none';
-    weatherWidget.style.display = 'none';
+   // weatherWidget.style.display = 'none';
     heading1.style.display = 'none';
     airContainer.style.display='none'
 
@@ -47,7 +47,7 @@ function toggleHome() {
 function toggleMenuWeatherForecast(){
     var greetingsHeading =document.getElementById('greetingsHeading');
     var dailyForecastContainer = document.getElementById('dailyForecastContainer');
-    var weatherWidget = document.getElementById('openweathermap-widget-21');
+   // var weatherWidget = document.getElementById('openweathermap-widget-22');
     var greetingsContainer = document.getElementById('greetingsContainer');
     var weatherContainer = document.getElementById('weatherContainer');
     var heading1 = document.getElementById('heading1');
@@ -57,7 +57,7 @@ function toggleMenuWeatherForecast(){
     var ForecastContainer1 = document.getElementById('ForecastContainer1');
    
     dailyForecastContainer.style.display = 'block';
-    weatherWidget.style.display = 'block';
+   // weatherWidget.style.display = 'block';
     heading1.style.display = 'block';
     ForecastContainer1.style.display = 'block';
 
@@ -79,7 +79,7 @@ function toggleMenuWeatherForecast(){
 function toggleLoginForm(){
     var greetingsHeading =document.getElementById('greetingsHeading');
     var dailyForecastContainer = document.getElementById('dailyForecastContainer');
-    var weatherWidget = document.getElementById('openweathermap-widget-21');
+ //   var weatherWidget = document.getElementById('openweathermap-widget-22');
     var greetingsContainer = document.getElementById('greetingsContainer');
     var weatherContainer = document.getElementById('weatherContainer');
     var loginContainer = document.getElementById('loginContainer');
@@ -91,7 +91,7 @@ function toggleLoginForm(){
 
     greetingsHeading.style.display = 'none';
     dailyForecastContainer.style.display = 'none';
-    weatherWidget.style.display = 'none';
+//    weatherWidget.style.display = 'none';
     greetingsContainer.style.display = 'none';
     weatherContainer.style.display = 'none';
     heading1.style.display = 'none';
@@ -108,7 +108,7 @@ function toggleLoginForm(){
 function toggleMenuAirQuality(){
     var greetingsHeading =document.getElementById('greetingsHeading');
     var dailyForecastContainer = document.getElementById('dailyForecastContainer');
-    var weatherWidget = document.getElementById('openweathermap-widget-21');
+ //   var weatherWidget = document.getElementById('openweathermap-widget-22');
     var greetingsContainer = document.getElementById('greetingsContainer');
     var weatherContainer = document.getElementById('weatherContainer');
     var loginContainer = document.getElementById('loginContainer');
@@ -120,7 +120,7 @@ function toggleMenuAirQuality(){
     
     greetingsHeading.style.display = 'none';
     dailyForecastContainer.style.display = 'none';
-    weatherWidget.style.display = 'none';
+  //  weatherWidget.style.display = 'none';
     greetingsContainer.style.display = 'none';
     weatherContainer.style.display = 'none';
     heading1.style.display = 'none';

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap');
+
 body{
     background-image: url(assets/sky2.jpeg);
     background-position: center;
@@ -88,37 +88,7 @@ header{
     font-size: 35px;
     
 }
-/*
 
-#greetingsContainer {
-   
-    position: relative;
-    background-color: #56BBF1;
-    padding: 20px;
-    margin-top: 55px;
-    border-radius: 100px;
-    
-    
-}
-
-
-#greetingsContainer::after {
-  
-    content: '';
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border: 10px solid transparent;
-    border-top-color: #56BBF1;
-    border-bottom: 0;
-    margin-left: -10px;
-}
-.greetings{
-    font-family: 'M PLUS 1 Code';
-}
-*/
 #greetingsContainer {
     position: relative;
     background-color: #56BBF1;
@@ -170,7 +140,7 @@ header{
     display: flex;
     justify-content: center; 
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 100px;
     margin-left: 100px;
 }
 
@@ -188,35 +158,8 @@ header{
     border-radius: 10px;
    
 }
-/*
 
-#dailyForecastContainer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
 
-.col {
-    display: inline-block; 
-    width: 150px;
-    height: 150px;
-    border: 1px solid #B8FFF9;
-    margin: 10px;
-    padding: 10px;
-    background-color: #22577E;
-    text-align: center;
-    color: #B8FFF9;
-    border-radius: 10px;
-}*/
-#openweathermap-widget-21{
-    margin-top: 50px;
-    margin-left: 400px;
-    margin-right: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
  #heading1{
     margin-top: 35px;
     color: #B8FFF9;
@@ -336,9 +279,24 @@ header{
    
    
 }
+@media  (max-width: 412px) {
+    #airQualityInsights{
+        width: 90%; /* Adjust the width to take up more space */
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 20px; /* Add padding to give more breathing room */
+        box-sizing: border-box; /* Ensure padding is included in the width */
+    
+    }
+}
 
 
 @media screen and (max-width: 1382px) {
+    
+    
     .hamburger {
         display: block; 
         position: absolute; 
@@ -419,12 +377,11 @@ header{
     }
     #airQualityInsights{
         width: 50%;
-        height: 150px; 
+        height: auto; 
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px; 
-        margin-bottom: 50px;
-       
+        margin-bottom: 50px; 
     
     }
    
