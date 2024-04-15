@@ -23,14 +23,14 @@
                     <li><a href="#Login" onclick="toggleLoginForm()">Login</a></li>
 
                     <div id="searchBar">
-                        <input type="text" id="searchInput" placeholder="Search...">
+                        <input type="text" id="searchInput" placeholder="Search a country...">
                         <button type="submit" id="searchButton">Search</button>
                     </div>
                 </ul>
             </nav>
         </div>
     </div>
-    <div id="greetingsHeading" >Greetings!!</div>
+    <div id="greetingsHeading" style="display: none;" >Greetings!!</div>
     <div id="greetingsContainer">
         <div class="container">
         <div class="row">
@@ -44,8 +44,18 @@
     </div>
     <div id="weatherContainer"></div>
     <h1 id="heading1" style="display: none;">Daily Forecast</h1>
+    <div id="ForecastContainer1" style="display: none;">
+        <div class="row">
+          <div class="col-md-6 offset-md-3 mt-4">
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search a country" aria-label="Search">
+              <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </div>
+      
     <div id="dailyForecastContainer" style="display: none;">
-       
         <div class="row">
             <div class="col">Sunday</div>
             <div class="col">Monday</div>
@@ -90,6 +100,7 @@
       <div id="airContainer" style="display: none;">
         <input type="text" id="cityInput" placeholder="Enter city name">
         <button id="airqualityBtn" onclick="searchCity()">Search</button>
+        <div id="airQualityInsights"></div>
         <canvas id="airQualityChart" width="500" height="300"></canvas>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       </div>

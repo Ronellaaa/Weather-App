@@ -1,7 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap');
 body{
-    background-image: url(assets/background2.jpeg);
+    background-image: url(assets/sky2.jpeg);
     background-position: center;
     background-size: cover;
 }
@@ -88,9 +88,10 @@ header{
     font-size: 35px;
     
 }
-
+/*
 
 #greetingsContainer {
+   
     position: relative;
     background-color: #56BBF1;
     padding: 20px;
@@ -102,6 +103,7 @@ header{
 
 
 #greetingsContainer::after {
+  
     content: '';
     position: absolute;
     bottom: -20px;
@@ -116,7 +118,35 @@ header{
 .greetings{
     font-family: 'M PLUS 1 Code';
 }
+*/
+#greetingsContainer {
+    position: relative;
+    background-color: #56BBF1;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 600px; /* Limit the width to make it visually appealing */
+    margin: 55px auto 20px auto; /* Center the container horizontally and add margin at the top */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+}
 
+#greetingsContainer::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #56BBF1;
+    border-bottom: 0;
+    margin-left: -10px;
+}
+.greetings {
+    font-family: 'Roboto Serif", serif';
+    color: #fff; /* Set the text color to white for better contrast */
+    font-size: 18px; /* Adjust the font size as needed */
+    line-height: 1.5; /* Increase the line height for better readability */
+}
 #weatherContainer {
     display: flex;
     flex-direction: column;
@@ -191,6 +221,8 @@ header{
     margin-top: 35px;
     color: #B8FFF9;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  
    
 }
 
@@ -272,14 +304,36 @@ header{
     color: aliceblue;
 }
 #greetingsHeading{
-    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #B8FFF9;
+    font-size: 40px; 
+    margin-top: 50px; 
+    width: 100%; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
 }
+#airQualityInsights{
+    width: 500px;
+    height: 100px;
+    margin-left: 500px;
+    margin-top: 50px;
+    padding: 20px;
+    color: #B8FFF9;
+    background-color: #22577E;
+    border: 1px solid #B8FFF9;
+    border-radius: 50px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
 
 
 @media (max-width: 500px) {
     #loginContainer {
         width: 90%;
     }
+   
    
 }
 
@@ -290,7 +344,7 @@ header{
         position: absolute; 
         top: 10px; 
         right: 10px; 
-        z-index: 999; 
+        z-index: 1000;
         border: none;
     }
 
@@ -326,27 +380,52 @@ header{
         font-size: 16px;
         color: #B8FFF9;
     }
-
     #searchBar {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px; 
+        text-align: center;
+    }
+    
+    #searchInput {
+        width: 80%; 
+        margin-bottom: 10px; 
+    }
+
+    #searchButton {
+        width: 80%; 
+    }
+
+    /*#searchBar {
         display: none;
         margin-top: 10px; 
-    }
+    }*/
+
     #greetingsHeading{
-     /*   margin-left: 550px;
-        margin-top: 100px;
-        color: #B8FFF9;
-        font-size: 50px;
-       */
         margin-left: auto;
         margin-right: auto;
         text-align: center;
         color: #B8FFF9;
-        font-size: 40px; /* Adjust the font size as needed */
-        margin-top: 50px; /* Adjust the margin-top as needed */
+        font-size: 40px; 
+        margin-top: 100px; 
         width: 100%; 
     }
     #greetingsContainer {
+        z-index: 1;
         margin-top: 100px;
+        width:65%;
+      
+    }
+    #airQualityInsights{
+        width: 50%;
+        height: 150px; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px; 
+        margin-bottom: 50px;
+       
+    
     }
    
 }
